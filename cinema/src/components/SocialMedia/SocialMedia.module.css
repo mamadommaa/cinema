@@ -1,0 +1,6 @@
+.socialMedia {
+  display: flex;
+  gap: 24px;
+  padding: 42px 0px;
+  justify-content: flex-end;
+}

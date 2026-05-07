@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.appContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: white;
+  padding: 0 80px;
+}
+
+.headerWrapper {
+  display: flex;
+  max-width: 1280px;
+  align-items: center;
+  gap: 50px;
+  flex-grow: 1;
+}
+
+.headerLogo {
+  color: #000;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.headerBlackWrapper {
+  background-color: black;
+  width: 100%;
+  padding: 15px 35px;
+  border-radius: 100px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.headerLink {
+  font-size: 23px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.headerInput {
+  padding: 12px 16px 12px 52px;
+  background-color: #FF6AAF;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  width: 100%;
+  line-height: 24px;
+  color: white;
+}
+
+.headerInput::placeholder {
+  color: #FFFFFF;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.headerCustomInput {
+  position: relative;
+  width: 100%;
+  max-width: 655px;
+}
+
+.headerSearchIcon {
+  position: absolute;
+  top: -4px;
+  left: 5px;
+  width: 55px;
+  height: 55px;
+}
+
+
+.headerLink {
+  font-size: 23px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 0;
+  position: relative;
+}
+
+
+.headerLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: #FF6AAF;
+  border-radius: 100px;
+  transition: width 0.3s ease;
+}
+
+.headerLink:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,108 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+}
+
+.modal {
+  margin: 270px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 64px 40px;
+  border-radius: 24px;
+  max-width: 420px;
+  width: 100%;
+  position: relative;
+}
+
+.modalButtonClose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: -64px;
+  cursor: pointer;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 0 24px 0;
+}
+
+.modalButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.modalLogo {
+  margin-bottom: 40px;
+}
+
+.modalButton {
+  width: 100%;
+}
+
+.modalForm {
+  width: 100%;
+}
+
+.modalCustomInput {
+  position: relative;
+}
+
+.modalInput {
+  border-radius: 8px;
+  padding: 16px 16px 16px 52px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  width: 100%;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modalInputIcon {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+}
+
+.errorMessage {
+  color: #ff4444;
+  background-color: #fff8f8;
+  border: 1px solid #ff4444;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+.loadingMessage {
+  color: #666;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+}

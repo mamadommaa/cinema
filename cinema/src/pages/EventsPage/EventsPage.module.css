@@ -1,0 +1,131 @@
+  .events {
+    background-image: url('/eventsBackground.jpg');
+    min-height: 2657px;
+    max-width: 2560px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    font-family: 'Benzin', sans-serif;
+  }
+
+  .eventsWrapper {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+
+  .eventsTitle {
+    font-size: 135px;
+    color: #FD6DAF;
+    padding-top: 25px;
+    line-height: 110px;
+  }
+
+  .eventsSubTitle {
+    color: #2645f2;
+    font-family: 'Good Vibes Pro', cursive;
+    font-size: 95px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-left: 670px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .eventsSection {
+    max-width: 1360px;
+    background-color: white;
+    padding: 28px;
+    border-radius: 10px;
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 40px;
+  }
+
+  .eventsSectionTitle {
+    font-size: 35px;
+    color: rgb(28, 27, 27);
+    margin-bottom: 30px;
+
+  }
+
+  .eventList {
+    display: flex;
+    position: absolute;
+    left: -200px;
+    top: 100px;
+    gap: 82px;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  img {
+    display: block;
+  }
+
+
+  .eventElement {
+    box-shadow: 5px 5px 0px 5px #FD6DAF;
+    max-width: 492px;
+    position: relative;
+  }
+
+  .eventElementTitle {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .eventListTextWrapper {
+    padding: 25px 25px 25px 80px;
+    line-height: 25px;
+  }
+
+  .eventElementDescr {
+    font-size: 20px;
+    max-width: 420px;
+  }
+
+  .glassNumber {
+    position: absolute;
+    top: -30px;
+    left: 5px;
+  }
+
+  .eventDescr {
+    font-size: 21px;
+    line-height: 33px;
+  }
+
+  .marker {
+    color: #F8B600;
+    font-weight: bold;
+  }
+
+  .filmsDescrWrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+  }
+
+  .filmsDescr {
+    font-size: 27px;
+    line-height: 40px;
+  }
+
+  .filmsImg {
+    margin-top: 15px;
+  }
+
+  .bid {
+
+    justify-content: start;
+  }

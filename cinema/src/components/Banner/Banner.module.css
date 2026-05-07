@@ -1,0 +1,48 @@
+.banner {
+  display: flex;
+  padding-top: 32px;
+  align-items: center;
+  gap: 40px;
+}
+
+.bannerMetaWrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.bannerRating {
+  color: #FFFFFF;
+  display: flex;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+
+.bannerImg {
+  border-radius: 20px;
+  width: 680px;
+  height: 552px;
+}
+
+.bannerTitle {
+  margin: 0 0 16px 0;
+  margin-bottom: 16px;
+}
+
+.bannerDescr {
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.bannerInteractive {
+  display: flex;
+  gap: 16px;
+}

@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: 'Benzin';
+  src: url('./assets/fonts/Benzin-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Benzin-Regular.woff') format('woff'),
+    url('./assets/fonts/Benzin-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Benzin';
+  src: url('./assets/fonts/Benzin-Medium.woff2') format('woff2'),
+    url('./assets/fonts/Benzin-Medium.woff') format('woff'),
+    url('./assets/fonts/Benzin-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Benzin';
+  src: url('./assets/fonts/Benzin-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Benzin-Bold.woff') format('woff'),
+    url('./assets/fonts/Benzin-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Good Vibes Pro';
+  src: url('./assets/fonts/goodVibes/GoodVibesPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,46 @@
+.moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.genrePage {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.movieCard {
+  display: block;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.moviePoster {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.movieRating {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.movieTitle {
+  margin: 8px 0 0;
+  font-size: 16px;
+  font-weight: 500;
+}

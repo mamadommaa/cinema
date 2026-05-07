@@ -1,0 +1,185 @@
+.accountPage {
+  color: white;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 160px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.accountTitle {
+  margin-bottom: 40px;
+}
+
+.userInfo {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.userInfo h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.userInfo p {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+.favoritesSection h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.movieCard {
+  display: block;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.movieCard:hover {
+  transform: scale(1.05);
+}
+
+.moviePoster {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.movieRating {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.movieRating img {
+  width: 16px;
+  height: 16px;
+}
+
+.movieTitle {
+  margin: 8px 0 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.error {
+  color: #ff4444;
+}
+
+.tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 16px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 8px;
+}
+
+.tab:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.activeTab {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: 600;
+}
+
+.settingsSection h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.settingsCard {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 600px;
+}
+
+.settingsRow {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
+}
+
+.settingsRow:last-of-type {
+  border-bottom: none;
+}
+
+.settingsLabel {
+  min-width: 150px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+}
+
+.settingsValue {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.logoutButton {
+  margin-top: 32px;
+  padding: 12px 24px;
+  background: rgba(255, 0, 0, 0.2);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.logoutButton:hover {
+  background: rgba(255, 0, 0, 0.3);
+  border-color: rgba(255, 0, 0, 0.8);
+}

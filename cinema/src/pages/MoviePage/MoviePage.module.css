@@ -1,0 +1,132 @@
+.moviePageTitle {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+  color: white;
+  padding-top: 30px;
+}
+
+.moviePageContent {
+  display: flex;
+  align-items: top;
+  gap: 100px;
+}
+
+.moviePage {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.moviePageGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 700px;
+}
+
+.moviePageRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 50px;
+}
+
+.moviePageHeader {
+  font-weight: 800;
+  color: #FD6DAF;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.moviePageValue {
+  background-color: rgb(23, 16, 16);
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: rgb(225, 206, 206);
+  font-weight: 500;
+  font-size: 20px;
+  word-break: break-word;
+  flex: 1;
+  display: inline-block;
+  width: fit-content;
+}
+
+.moviePageRight {
+  flex: 1;
+  min-width: 280px;
+}
+
+.progressCard {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.progressTitle {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.progressContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.progressBarWrapper {
+  width: 100%;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progressFill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #FF6AAF, #FF3D8A);
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+.progressStats {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.progressLabel {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.progressPercent {
+  color: #FF6AAF;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.progressNote {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin-top: 12px;
+}
+
+.blurred {
+  filter: blur(4px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.loginRequired {
+  text-align: center;
+  margin-top: 12px;
+  color: #FF6AAF;
+  font-size: 14px;
+}

@@ -1,0 +1,21 @@
+.topFilmsTitle {
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.topFilms {
+  padding: 40px 0 0 0;
+}
+
+.topFilmsMovieGrid {
+  margin-bottom: 120px;
+}
+
+.homePage {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
