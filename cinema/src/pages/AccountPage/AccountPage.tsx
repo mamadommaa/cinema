@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { MovieGrid } from '../../components/MovieGrid/MovieGrid';
 import { Title } from "../../components/Title/Title"
@@ -57,10 +56,12 @@ export const AccountPage = () => {
                     Настройки аккаунта
                 </button>
             </div>
-            <Recommendation />
+
             {activeTab === 'favorites' ? (
                 <div className={styles.favoritesSection}>
-                    <h2>Избранное</h2>
+                    <Recommendation />
+
+                    <h2 className={styles.title}>ИЗБРАННОЕ</h2>
 
                     {favorites.length === 0 ? (
                         <p>У вас пока нет избранных фильмов</p>

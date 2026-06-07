@@ -1,13 +1,16 @@
 .recommendationsWidget {
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 70px;
+  margin-bottom: 70px;
 }
 
-.section {
-  margin-bottom: 40px;
-}
+
 
 .sectionTitle {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #FF6AAF;
@@ -17,4 +20,10 @@
   text-align: center;
   padding: 40px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.descr {
+  font-size: 23px;
+  line-height: 35px;
+  margin-bottom: 20px;
 }

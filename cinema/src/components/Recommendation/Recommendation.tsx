@@ -18,6 +18,15 @@ export const Recommendation = () => {
 
     return (
         <div className={styles.recommendationsWidget}>
+            {recommended.length > 0 && (
+                <div className={styles.section}>
+                    <h3 className={styles.sectionTitle}>
+                        ШАНТИ РЕКОМЕНДУЕТ
+                    </h3>
+                    <p className={styles.descr}>Мы посмотрели, что ты любишь, и выбрали для тебя самое близкое по духу. Смотри фильмы из нашей подборки по твоим любимым жанрам!</p>
+                    <MovieGrid movies={recommended} showRank={false} darkText={false} />
+                </div>
+            )}
             {lastWatched.length > 0 && (
                 <div className={styles.section}>
                     <h3 className={styles.sectionTitle}>НЕДАВНО СМОТРЕЛИ</h3>
@@ -25,14 +34,7 @@ export const Recommendation = () => {
                 </div>
             )}
 
-            {recommended.length > 0 && (
-                <div className={styles.section}>
-                    <h3 className={styles.sectionTitle}>
-                        Наша рекомендация на основе ваших предпочтений
-                    </h3>
-                    <MovieGrid movies={recommended} showRank={false} darkText={false} />
-                </div>
-            )}
+
         </div>
     );
 };
