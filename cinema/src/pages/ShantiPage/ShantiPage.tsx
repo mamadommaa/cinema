@@ -33,6 +33,7 @@ export const ShantiPage = () => {
 
     return (
         <div className={styles.container}>
+            <img className={styles.shantiChat} src="/shanti-chat.png" alt="" />
             <div className={styles.chat}>
                 <div className={styles.messages} ref={messagesContainerRef}>
                     {messages.map((msg, idx) => (
