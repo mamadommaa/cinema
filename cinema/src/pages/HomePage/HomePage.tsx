@@ -18,6 +18,7 @@ export const HomePage = () => {
 
     return (
         <div className={styles.homePage}>
+            <img className={styles.shantiHomePage} src="/shanti-home-page.png" alt="" />
             <Banner movie={randomMovie} showExtra={true} />
             <div className={styles.topFilms}>
                 <h2 className={styles.topFilmsTitle}>Топ-10 фильмов:</h2>

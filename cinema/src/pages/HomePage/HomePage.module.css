@@ -6,6 +6,12 @@
   margin-bottom: 64px;
 }
 
+.shantiHomePage {
+  position: absolute;
+  left: 0;
+  top: 160px;
+}
+
 .topFilms {
   padding: 40px 0 0 0;
 }

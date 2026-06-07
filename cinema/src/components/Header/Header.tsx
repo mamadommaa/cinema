@@ -16,8 +16,8 @@ export const Header = () => {
     return (
         <div className={styles.header}>
             <div className={styles.headerWrapper}>
-                <NavLink to="/home" className={styles.headerLogo}>
-                    Лого
+                <NavLink to="/home">
+                    <img src="/logo.png" className={styles.headerLogo} alt="" />
                 </NavLink>
                 <div className={styles.headerBlackWrapper}>
                     <NavLink to="/home" className={styles.headerLink}>Главная</NavLink>
