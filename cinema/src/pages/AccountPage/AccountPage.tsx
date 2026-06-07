@@ -7,6 +7,7 @@ import { fetchFavorites, removeFavorite } from '../../store/favoritesSlice';
 import { logoutUser } from '../../store/userSlice';
 import { useNavigate } from 'react-router-dom';
 import styles from './AccountPage.module.css';
+import { Recommendation } from '../../components/Recommendation/Recommendation';
 
 export const AccountPage = () => {
     const dispatch = useAppDispatch();
@@ -47,7 +48,7 @@ export const AccountPage = () => {
                     className={`${styles.tab} ${activeTab === 'favorites' ? styles.activeTab : ''}`}
                     onClick={() => setActiveTab('favorites')}
                 >
-                    Избранные фильмы
+                    Подборка
                 </button>
                 <button
                     className={`${styles.tab} ${activeTab === 'settings' ? styles.activeTab : ''}`}
@@ -56,10 +57,10 @@ export const AccountPage = () => {
                     Настройки аккаунта
                 </button>
             </div>
-
+            <Recommendation />
             {activeTab === 'favorites' ? (
                 <div className={styles.favoritesSection}>
-                    <h2>Избранное ({favorites.length})</h2>
+                    <h2>Избранное</h2>
 
                     {favorites.length === 0 ? (
                         <p>У вас пока нет избранных фильмов</p>

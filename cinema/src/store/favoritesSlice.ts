@@ -4,6 +4,7 @@ import { Movie } from './moviesSlice';
 
 const apiClient = axios.create({
     baseURL: 'http://localhost:5000/api',
+    withCredentials: true,
 });
 
 interface FavoritesState {
@@ -83,16 +84,20 @@ const favoritesSlice = createSlice({
             .addCase(addFavorite.pending, (state, action) => {
                 state.addingId = action.meta.arg;
                 state.error = null;
-                console.log(' Добавляем фильм с id:', action.meta.arg);
+                console.log('Добавляем фильм с id:', action.meta.arg);
             })
             .addCase(addFavorite.fulfilled, (state, action) => {
                 state.addingId = null;
-                console.log('Фильм успешно добавлен с id:', action.meta.arg);
+                // Добавляем фильм в список избранного
+                if (action.payload) {
+                    state.items.push(action.payload);
+                }
+                console.log('Фильм успешно добавлен');
             })
             .addCase(addFavorite.rejected, (state, action) => {
                 state.addingId = null;
                 state.error = action.payload as string || 'Ошибка добавления';
-                console.log(' Ошибка добавления:', action.payload);
+                console.log('Ошибка добавления:', action.payload);
             })
             .addCase(removeFavorite.pending, (state, action) => {
                 state.addingId = action.meta.arg;

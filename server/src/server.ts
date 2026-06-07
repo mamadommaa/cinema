@@ -9,6 +9,7 @@ import favoritesRoutes from './routes/favoritesRoutes';
 import watchProgressRoutes from './routes/watchProgressRoutes';
 import shantiRoutes from './routes/shantiRoutes';
 import quizRoutes from './routes/quizRoutes';
+import recommendationsRoutes from './routes/recommendationsRoutes';
 dotenv.config();
 
 const app = express();
@@ -41,6 +42,8 @@ app.use('/api/favorites', favoritesRoutes);
 app.use('/api/watch-progress', watchProgressRoutes);
 app.use('/api/shanti', shantiRoutes);
 app.use('/api/quiz', quizRoutes);
+
+app.use('/api/recommendations', recommendationsRoutes);
 
 app.get('/api/health', (req, res) => {
     res.json({ status: 'OK' });

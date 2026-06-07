@@ -5,6 +5,7 @@ import userReducer from './userSlice';
 import favoritesReducer from './favoritesSlice'
 import watchProgressReducer from './watchProgress';
 import shantiReducer from './shantiSlice';
+import recommendationsReducer from './recommendationsSlice';
 
 export const store = configureStore({
     reducer: {
@@ -14,6 +15,7 @@ export const store = configureStore({
         favorites: favoritesReducer,
         watchProgress: watchProgressReducer,
         shanti: shantiReducer,
+        recommendations: recommendationsReducer,
     }
 })
 
